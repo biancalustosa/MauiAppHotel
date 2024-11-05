@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource PrimaryDark}">
+
+        <VerticalStackLayout VerticalOptions="CenterAndExpand" Padding="10">
+            <Label 
+                Text="SOBRE"
+                FontFamily="Itim-Regular"
+                FontSize="30"
+                TextColor="{StaticResource Primary}"
+                HorizontalOptions="Center"
+                Padding="10"/>
+
+            <Frame Padding="10" BackgroundColor="{StaticResource Primary}" BorderColor="{StaticResource Primary}">
+                <VerticalStackLayout>
+                    <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="*, *">
+
+                        <Label Grid.Row="0" Grid.Column="0" Text="Sobre nós: " FontSize="18"
+                        FontFamily="Itim-Regular"
+                        TextColor="{StaticResource Black}"
+                        HorizontalTextAlignment="Center"/>
+                        
+
+                        <Label Grid.Row="0" Grid.Column="1" Text="Somos um rede de hotel presente no mercado desde 1990, com centenas de unidades ao redor do mundo. Já contamos com mais de 50 mil hospedes alocados. Aqui, prezamos 100% no seu bem-estar."
+                        FontSize="16"
+                        FontFamily="Itim-Regular"
+                        TextColor="#FFFDCBFD"
+                        HorizontalTextAlignment="Start"/>
+
+                        <Label Grid.Row="1" Grid.Column="0" Text="Desenvolvido por:" FontSize="18"
+                        FontFamily="Itim-Regular"
+                        TextColor="Black"
+                        HorizontalTextAlignment="Center"
+                        Margin="0,9,0,0"/>
+
+                        <Label Grid.Row="1" Grid.Column="1" Text="Bianca Lustosa, Técnico em Desenvolvimento de Sistemas" FontSize="16"
+                        FontFamily="Itim-Regular"
+                        TextColor="#FFFDCBFD"
+                        Margin="0,10,0,0"/>
+                    </Grid>
+                    <Label Text="Ano de Desenvolvimento: 2024"
+                           FontSize="18"
+                           FontFamily="Itim-Regular"
+                           TextColor="{StaticResource Black}"
+                           HorizontalOptions="Center"
+                           Margin="5"/>                 
+                </VerticalStackLayout>
+            </Frame>
+            <Button Text="Voltar" 
+                    TextColor="Black" 
+                    FontSize="20" 
+                    FontFamily="Itim-Regular" 
+                    BackgroundColor="{StaticResource Gray200}"
+                    Margin="0,5,0,0"
+                    Clicked="Button_Clicked"/>
+
+        </VerticalStackLayout>
+
+</ContentPage>

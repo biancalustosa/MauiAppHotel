@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.HospedagemContratada"
+             Title="HospedagemContratada"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource PrimaryDark}">
+
+        <VerticalStackLayout VerticalOptions="CenterAndExpand" Padding="10">
+            <Label 
+                Text="Suíte Super Luxo"
+                TextColor="{StaticResource Primary}"
+                FontFamily="Itim-Regular"
+                FontSize="50"
+                HorizontalTextAlignment="Center"/>
+
+                <Frame Margin="10" BackgroundColor="{StaticResource SecondaryDarkText}" BorderColor="{StaticResource SecondaryDarkText}">
+                    <HorizontalStackLayout HorizontalOptions="Center">
+                        <HorizontalStackLayout Margin="10">
+                            <Label Text="Adultos: " FontFamily="Itim-Regular" FontSize="Subtitle" TextColor="{StaticResource Primary}"/>
+                            <Label Text=" 2" TextColor="{StaticResource PrimaryDarkText}" FontSize="18"/>
+                        </HorizontalStackLayout>
+                        
+                        <HorizontalStackLayout Margin="10">
+                            <Label Text="Crianças: " FontFamily="Itim-Regular" FontSize="Subtitle" TextColor="{StaticResource Primary}"/>
+                            <Label Text=" 1" TextColor="{StaticResource PrimaryDarkText}" FontSize="18"/>
+                        </HorizontalStackLayout>
+                    </HorizontalStackLayout>
+                </Frame>
+                <Frame Margin="10" BackgroundColor="{StaticResource SecondaryDarkText}" BorderColor="{StaticResource SecondaryDarkText}">
+                    <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="*, *, *" >
+                        <Label Grid.Row="0" Grid.Column="0" Text="Check-In: " FontFamily="Itim-Regular" FontSize="16" FontAttributes="Bold" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Row="0" Grid.Column="1" Text="Check-Out: " FontFamily="Itim-Regular" FontSize="16" FontAttributes="Bold" TextColor="{StaticResource Primary}"/>
+                        <Label Grid.Row="0" Grid.Column="2" Text="Estadia: " FontFamily="Itim-Regular" FontSize="16" FontAttributes="Bold" TextColor="{StaticResource Primary}"/>
+
+                        <Label Grid.Row="1" Grid.Column="0" Text="08/11/2024 " FontFamily="Itim-Regular" FontSize="16" TextColor="{StaticResource Black}"/>
+                        <Label Grid.Row="1" Grid.Column="1" Text="17/11/2024 " FontFamily="Itim-Regular" FontSize="16" TextColor="{StaticResource Black}"/>
+                        <Label Grid.Row="1" Grid.Column="2" Text="10 " FontFamily="Itim-Regular" FontSize="16" TextColor="{StaticResource Black}"/>
+                    </Grid>
+                </Frame>
+
+                <Frame Margin="10" BackgroundColor="{StaticResource SecondaryDarkText}" BorderColor="{StaticResource SecondaryDarkText}">
+                    <HorizontalStackLayout HorizontalOptions="Center">
+                        <Label Text="Valor Total: " FontFamily="Itim-Regular" FontSize="18" FontAttributes="Bold" TextColor="{StaticResource Primary}" />
+                        <Label Text=" R$ 2.750,00" FontFamily="Itim-Regular" FontSize="18" TextColor="{StaticResource Black}"/>
+                    </HorizontalStackLayout>
+
+                </Frame>
+
+                <Button Text="Voltar" 
+                    TextColor="Black" 
+                    FontSize="20" 
+                    FontFamily="Itim-Regular" 
+                    BackgroundColor="{StaticResource Primary}"
+                    Margin="10,5,10,5"
+                    Clicked="Button_Clicked"/>
+                    
+        </VerticalStackLayout>
+        
+</ContentPage>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.HistoricoHospedagem"
+             Title="HistoricoHospedagem"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource PrimaryDark}">
+
+
+        <VerticalStackLayout VerticalOptions="CenterAndExpand" Padding="10">
+            <Label Text="Histórico de Hospedagem"
+                FontFamily="Itim-Regular"
+                FontSize="30"
+                TextColor="{StaticResource Primary}"
+                HorizontalOptions="Center"
+                Padding="10"/>
+
+            <Frame Padding="10" BackgroundColor="{StaticResource SecondaryDarkText}" BorderColor="{StaticResource SecondaryDarkText}">
+                <VerticalStackLayout>
+                   <Grid RowDefinitions="Auto, Auto, Auto" ColumnDefinitions="*, *, *, *,*">
+                    
+                    <Label Grid.Row="0" Grid.Column="0" Text="Check-In" TextColor="{StaticResource Primary}" FontFamily="Itim-Regular" FontSize="Small"/>
+                    <Label Grid.Row="1" Grid.Column="0" Text="10/02/2024" TextColor="{StaticResource Black}" FontFamily="Itim-Regular" FontSize="Small"/>
+                    <Label Grid.Row="2" Grid.Column="0" Text="08/11/2024" TextColor="{StaticResource Black}" FontFamily="Itim-Regular" FontSize="Small"/>
+                  
+
+                    <Label Grid.Row="0" Grid.Column="1" Text="Check-Out" TextColor="{StaticResource Primary}" FontFamily="Itim-Regular" FontSize="Small"/>
+                    <Label Grid.Row="1" Grid.Column="1" Text="14/02/2024" TextColor="{StaticResource Black}" FontFamily="Itim-Regular" FontSize="Small"/>
+                    <Label Grid.Row="2" Grid.Column="1" Text="17/12/2024" TextColor="{StaticResource Black}" FontFamily="Itim-Regular" FontSize="Small"/>  
+
+                    <Label Grid.Row="0" Grid.Column="2" Text="Estadia" TextColor="{StaticResource Primary}" FontFamily="Itim-Regular" FontSize="Small"/>
+                    <Label Grid.Row="1" Grid.Column="2" Text="5" TextColor="{StaticResource Black}" FontFamily="Itim-Regular" FontSize="Small"/>
+                    <Label Grid.Row="2" Grid.Column="2" Text="10" TextColor="{StaticResource Black}" FontFamily="Itim-Regular" FontSize="Small"/>  
+
+                    <Label Grid.Row="0" Grid.Column="3" Text="Valor Pago" TextColor="{StaticResource Primary}" FontFamily="Itim-Regular" FontSize="Small"/>
+                    <Label Grid.Row="1" Grid.Column="3" Text="R$ 800" TextColor="{StaticResource Black}" FontFamily="Itim-Regular" FontSize="Small"/>
+                    <Label Grid.Row="2" Grid.Column="3" Text="R$ 2.750" TextColor="{StaticResource Black}" FontFamily="Itim-Regular" FontSize="Small"/>
+
+                    <Label Grid.Row="0" Grid.Column="4" Text="Quarto" TextColor="{StaticResource Primary}" FontFamily="Itim-Regular" FontSize="Small"/>
+                    <Label Grid.Row="1" Grid.Column="4" Text="Suíte Luxo" TextColor="{StaticResource Black}" FontFamily="Itim-Regular" FontSize="Small"/>
+                    <Label Grid.Row="2" Grid.Column="4" Text="Suíte Super Luxo" TextColor="{StaticResource Black}" FontFamily="Itim-Regular" FontSize="Small"/>    
+
+
+                   </Grid>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Button Text="Voltar" 
+                    TextColor="Black" 
+                    FontSize="20" 
+                    FontFamily="Itim-Regular" 
+                    BackgroundColor="{StaticResource Primary}"
+                    Margin="0,5,0,0"
+                    Clicked="Button_Clicked"/>
+
+        </VerticalStackLayout>
+
+
+
+
+
+</ContentPage>
